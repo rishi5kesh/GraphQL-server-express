@@ -10,7 +10,7 @@ import mongoose from 'mongoose';
 
 import schemas from './schemas';
 import resolvers from './resolvers';
-import volumeModel from './models/volumeModel';
+import machineModel from './models/machineModel';
 
 const apollo = new ApolloServer({
   typeDefs: schemas,
@@ -18,7 +18,7 @@ const apollo = new ApolloServer({
   context: async () => {
       return {
         models: {
-          volumeModel,
+          machineModel,
         },
       };
     },
