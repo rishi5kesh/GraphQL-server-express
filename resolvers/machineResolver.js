@@ -4,18 +4,18 @@
  */
 export default {
   Query: {
-    getVolumeCount: async (parent, { is_user_volume, state }, { models: { volumeModel } }, info) => {
+    getMachineCount: async (parent, { is_healthy, state }, { models: { machineModel } }, info) => {
       const statesArray = state.split("|");
       const states = [];
       statesArray.forEach(state => {
         states.push({"state": state});
       });
-      const volumeCount = await volumeModel.count({
+      const machineCount = await machineModel.count({
         $and: [
-          {  $or: states }, { "is_user_volume": is_user_volume }
+          {  $or: states }, { "is_healthy": is_healthy }
         ]
       }).exec();
-      return volumeCount;
+      return machineCount;
     },
   }
 };
