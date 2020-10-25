@@ -5,11 +5,11 @@
 import { gql } from 'apollo-server-express';
 
 export default gql`
-  type Volumes {
+  type Machines {
     id: ID
     name: String,
     state: String,
-    is_user_volume: Boolean,
+    is_healthy: Boolean,
   }
 
   extend type Query {
