@@ -13,6 +13,6 @@ export default gql`
   }
 
   extend type Query {
-    getVolumeCount(is_user_volume: Boolean, state: String): Int
+    getMachineCount(is_healthy: Boolean, state: String): Int
   }
 `;
