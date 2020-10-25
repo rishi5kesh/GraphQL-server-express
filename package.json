@@ -1,0 +1,31 @@
+{
+  "name": "graphql-express",
+  "version": "1.0.0",
+  "description": "GraphQL server with ExpressJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Rishikesh, S",
+    "email": "rishi5kesh@gmail.com"
+  },
+  "dependencies": {
+    "@babel/core": "file:./deps/@babel/core",
+    "@babel/node": "file:./deps/@babel/node",
+    "@babel/preset-env": "file:./deps/@babel/preset-env",
+    "apollo-server": "file:./deps/apollo-server",
+    "apollo-server-express": "file:./deps/apollo-server-express",
+    "babel-cli": "file:./deps/babel-cli",
+    "bcrypt": "file:./deps/bcrypt",
+    "body-parser": "file:./deps/body-parser",
+    "cors": "file:./deps/cors",
+    "esm": "file:deps/esm",
+    "express": "file:./deps/express",
+    "graphql": "file:./deps/graphql",
+    "jsonwebtoken": "file:./deps/jsonwebtoken",
+    "mongoose": "file:./deps/mongoose",
+    "nodemon": "file:./deps/nodemon"
+  }
+}
