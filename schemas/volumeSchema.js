@@ -7,7 +7,6 @@ import { gql } from 'apollo-server-express';
 export default gql`
   type Volumes {
     id: ID
-    uuid: String
     name: String,
     state: String,
     is_user_volume: Boolean,
