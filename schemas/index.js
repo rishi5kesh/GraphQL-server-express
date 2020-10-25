@@ -4,7 +4,7 @@
  */
 
 import { gql } from 'apollo-server-express';
-import volumeSchema from './volumeSchema';
+import machineSchema from './machineSchema';
 
 
 const linkSchema = gql`
@@ -15,5 +15,5 @@ const linkSchema = gql`
 
 export default [
   linkSchema,
-  volumeSchema,
+  macchineSchema,
 ];
